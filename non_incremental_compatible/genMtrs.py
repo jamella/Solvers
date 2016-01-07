@@ -429,6 +429,8 @@ def v2cnfMtr(camInV, MuxStyle):
         Vlines = inV.replace('\r','').split(';\n')
 
     #1.1 Convert the original circuit to CNF format:
+    has_CONST1 = False
+    has_CONST0 = False
     inputs = [] # stores 2 sets of inputs: PIs and p-bits
     varIndexDict = {}
     intVarDict = {}
@@ -448,6 +450,8 @@ def v2cnfMtr(camInV, MuxStyle):
                 line = line[:line.find('/')]
             else:
                 line = line.replace('\n','')
+            if "CONST1" in line:    has_CONST1 = True
+            if "CONST0" in line:    has_CONST0 = True
             line = line[:line.find('/')]
             PIs=re.search(r'(?<=input )(.*)(?=$)', line).group().replace(' ','').replace(';', '').split(',')
             tmpPis = []
@@ -516,6 +520,11 @@ def v2cnfMtr(camInV, MuxStyle):
     #print cnFile
 
     # 2. Add constraints:
+    #2.0 if there are CONST1 or CONST0, then constrain it to 0 or 1
+    if has_CONST1 == True:
+        cnFile.append(str(varIndexDict["CONST1"]) + " 0\n")
+    if has_CONST0 == True:
+        cnFile.append("-" + str(varIndexDict["CONST0"]) + " 0\n")
     #2.1 primary inputs are the same:
     cnFile.append('c Force PIs of 2 ckts to be the same:\n')
     piVec = inputs[0]

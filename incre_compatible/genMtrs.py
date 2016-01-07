@@ -887,6 +887,8 @@ def v2cnfMtr(camInV, MuxStyle, MuxStyle_flag, header=True):
         if 'input' in line:
             if "RE__" in line:    # here, I need to assign forbidden bits!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 line = line[:line.find('//RE_')]
+            if "CONST1" in line:    has_CONST1 = True
+            if "CONST0" in line:    has_CONST0 = True
             PIs=re.search(r'(?<=input )(.*)(?=$)', line).group().replace(' ','').replace(';', '').split(',')
             tmpPis = []
             for pi in PIs:
@@ -956,6 +958,11 @@ def v2cnfMtr(camInV, MuxStyle, MuxStyle_flag, header=True):
     #print cnFile
 
     # 2. Add constraints:
+    #2.0 if there are CONST1 or CONST0, then constrain it to 0 or 1
+    if has_CONST1 == True:
+        cnFile.append(str(varIndexDict["CONST1"]) + " 0\n")
+    if has_CONST0 == True:
+        cnFile.append("-" + str(varIndexDict["CONST0"]) + " 0\n")
     #2.1 primary inputs are the same:
     cnFile.append('c Force PIs of 2 ckts to be the same:\n')
     piVec = inputs[0]
