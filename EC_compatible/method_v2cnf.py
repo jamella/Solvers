@@ -14,7 +14,8 @@ def v2cnf(camInV, startIndex):
         inV = infile.read()
         Vlines = inV.split(';\n')
 
-
+    has_CONST0 = False
+    has_CONST1 = False
     inputs = []
     varIndexDict = {}
     varIndex = startIndex
@@ -33,6 +34,8 @@ def v2cnf(camInV, startIndex):
                 line = line[:line.find('/')]
             else:
                 line = line.replace('\n','')
+            if "CONST1" in line: has_CONST1 = True
+            if "CONST0" in line: has_CONST0 = True
             PIs=re.search(r'(?<=input )(.*)(?=$)', line).group().replace(' ','').replace(';', '').split(',')
             tmpPis = []
             for pi in PIs:
@@ -79,6 +82,10 @@ def v2cnf(camInV, startIndex):
             for line in cnfLines:
                 cnFile.append(line)
             gateCnt += 1
+    if has_CONST1 == True:
+        cnFile.append((str(varIndexDict["CONST1"]) + " 0\n"))
+    if has_CONST0 == True:
+        cnFile.append("-" + str(varIndexDict["CONST0"]) + " 0\n")
     camVarNum = varIndex-1 #total number of nodes in original ckt
     camCNFile = cnFile[:]
     # print 'This is PI: ', inputs[0]  # input[0] is a list with int elements
