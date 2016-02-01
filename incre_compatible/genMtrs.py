@@ -881,6 +881,8 @@ def v2cnfMtr(camInV, MuxStyle, MuxStyle_flag, header=True):
     poVars = []
     Allow = []
     gateCnt = 0
+    has_CONST1 = False
+    has_CONST0 = False
     # order of integers: PI vars, programming bit vars, PO vars, internal wire vars;
     for line in Vlines:
         line = line.replace('\n', '')

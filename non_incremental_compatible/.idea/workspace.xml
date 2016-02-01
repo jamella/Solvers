@@ -2,26 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85ba0e68-0f67-4039-bdc6-6d2b80e11ffa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-XOR-10-1stMtr.cnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-XOR-10-1stMtr.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-XOR-10-_findSolu.cnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-XOR-10-_findSolu.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-XOR-10-comp-cons.cnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-XOR-10-comp-cons.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-XOR-10.v" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-wPI.cnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-wPI.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt.v" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1-XOR-10-1stMtr.cnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1-XOR-10-1stMtr.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1-XOR-10-_findSolu.cnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1-XOR-10-_findSolu.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1-XOR-10-comp-cons.cnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1-XOR-10-comp-cons.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1-XOR-10.v" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/c432-mux4-1.v" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-177.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-178.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-180.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-186.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-187.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-188.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-190.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-191.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-194.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-195.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c1355-abcmap-fmt-OBF-196.v" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
     </list>
     <ignored path="format_change.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,7 +79,7 @@
       <file leaf-file-name="genMtrs.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/genMtrs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51446944">
+            <state vertical-scroll-proportion="0.0">
               <caret line="460" column="33" selection-start-line="460" selection-start-column="33" selection-end-line="460" selection-end-column="33" />
               <folding />
             </state>
@@ -156,6 +148,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -164,20 +158,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="format_change" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="non_incremental_compatible" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,10 +374,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-223" width="1920" height="1053" extended-state="0" />
+    <frame x="-1920" y="-223" width="1920" height="1053" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3281412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -515,6 +497,48 @@
     <entry file="file://$PROJECT_DIR$/EC_lib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#2#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/completeset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testforbid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genMtrs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decam-v5-cmmdline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EC_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#2#27#0" expanded="true" />
@@ -611,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finalSolu.cnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_orig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -663,13 +680,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finalSolu.cnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -724,13 +734,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/finalSolu.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finalSolu.cnf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -796,7 +799,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/genMtrs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51446944">
+        <state vertical-scroll-proportion="0.0">
           <caret line="460" column="33" selection-start-line="460" selection-start-column="33" selection-end-line="460" selection-end-column="33" />
           <folding />
         </state>
